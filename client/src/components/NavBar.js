@@ -27,6 +27,9 @@ const TopNavBar = () => {
                     <li className="nav-list-item">
                         <Link to="/login">Login</Link>
                     </li>
+                    <li className="nav-list-item">
+                        <Link to="/dashboard">Dashboard</Link>
+                    </li>
                 </ul>
             </Toolbar>
         </AppBar>

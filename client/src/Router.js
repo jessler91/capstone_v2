@@ -33,6 +33,7 @@ const Router = () => {
             <Route exact path="/" component={Homepage} />
             <Route path="/about" component={About} />
             <Route path="/login" component={Login} />
+            <Route path="/dashbboard" component={Dashboard} />
         </Switch>
     );
 };

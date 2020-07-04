@@ -22,9 +22,10 @@ export default class Homepage extends Component {
 
                     <Divider />
 
-                    <video src="../assets/homepage-scroll.mp4" autostart="false" height="300" width="644" />
-
+                    {/* <video src="../assets/hp-scroll.mp4" autostart="false" height="400" width="744" /> */}
+                    {/* <a href="../assets/hp-scroll.mp4" title="Download movie">film name</a> */}
                     {/* // Insert Video Here */}
+
 
                     {/* <video width="320" height="240" controlssrc="homepage-scroll" type="video/mp4">
                         <source src="homepage-scroll" type="video/mp4">
