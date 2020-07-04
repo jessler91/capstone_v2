@@ -1,15 +1,21 @@
 import React from 'react';
-import './App.css';
-
-// This is the Homepage of my App
-// This page shouldnt have state
+import TopNavBar from './components/NavBar'
+import './App.css'
+import Router from './Router'
+import { BrowserRouter } from 'react-router-dom'
+// import { Provider } from 'react-redux'
+// import store from './redux/store'
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
-  );
+      // <Provider store={store}>
+        <BrowserRouter>
+            <TopNavBar />
+            <Router />
+        </BrowserRouter>
+      // </Provider>
+    );
+
 }
 
 export default App;
