@@ -12,7 +12,7 @@ class Connection {
         host: process.env.DB_HOST,
         user: process.env.DB_USER,
         password: process.env.DB_PASS,
-        database: 'admin'
+        database: 'checkpoint2'
       })
 
       return this.pool

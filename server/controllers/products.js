@@ -2,7 +2,7 @@
 // Controllers File
 
 const mysql = require('mysql')
-const pool = require('../sql/connections')
+const pool = require('../sql/connection')
 
 
 // Get All Products
