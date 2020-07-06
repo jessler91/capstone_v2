@@ -12,10 +12,10 @@ export const logout = (user) => {
     }
 }
 
-export const addListing = (listing) => {
+export const addSKU = (product) => {
     return {
-        type: 'ADD_LISTING',
-        value: listing
+        type: 'ADD_SKU',
+        value: product
     }
 }
 

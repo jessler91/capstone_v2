@@ -16,7 +16,8 @@ function getProducts(req, res) {
           console.log({ 'message': 'Error occurred: ' + err })
           return res.status(500).send('An unexpected error occurred')
         }
-        return res.json(rows)
+        console.log(res.json(rows));
+        return res.json(rows);
     });
 
 }
@@ -46,4 +47,6 @@ function getProductsById(req, res) {
 module.exports = {
     getProducts,
     getProductsById,
+    // addProduct,
+    // deleteProduct,
 }

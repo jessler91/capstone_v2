@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 
 import {
@@ -10,60 +10,60 @@ import {
     TableRow
 } from '@material-ui/core'
 
+import DeleteIcon from '@material-ui/icons/Delete'
 
-// Update Later
-// const Dashboard = (props) => {
-//     return (
+const Dashboard = (props) => {
+    return (
+        <div>
 
-export default class Dashboard extends Component {
-    render() {
-        return (
-            <div>
-                Here is the dashboard, map through skus json file and display Products
-                <Container maxWidth="lg" className="car-container">
-                    <h4>Welcome, {props.user.username}</h4>
-                    <div className="flex-container">
-                        <Chart />
-                        <Total />
-                        <AddCar carTotal={props.cars.length} />
-                    </div>
-                    <Table>
-                        <TableHead>
-                            <TableRow>
-                                <TableCell>Id</TableCell>
-                                <TableCell>Make/Model</TableCell>
-                                <TableCell>MPG</TableCell>
-                                <TableCell>Cylinders</TableCell>
-                                <TableCell>Horsepower</TableCell>
-                                <TableCell>Delete</TableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                        {props.cars.map((car, idx) => (
-                            <TableRow key={car.id}>
-                                <TableCell component="th" scope="row">
-                                    {car.id}
-                                </TableCell>
-                                <TableCell>{car["name"]}</TableCell>
-                                <TableCell>{car["mpg"]}</TableCell>
-                                <TableCell>{car["cylinders"]}</TableCell>
-                                <TableCell>{car["horsepower"]}</TableCell>
+            <p>Here is the dashboard, map through skus json file and display Products</p>
+
+            <Container maxWidth="lg" className="sku-dashboard-container">
+
+                <h4>Welcome, Dashboard User Dan</h4>
+                <div className="flex-container">
+
+                </div>
+
+
+                <Table>
+
+                    <TableHead>
+                        <TableRow>
+                            <TableCell>Merchant SKU</TableCell>
+                            <TableCell>Display Name</TableCell>
+                            <TableCell>Quantity</TableCell>
+                            <TableCell>Delete</TableCell>
+                        </TableRow>
+                    </TableHead>
+
+
+                    <TableBody>
+                        {props.products.map((product, index) => (
+                            <TableRow key={product.id}>
+                                <TableCell component="th" scope="row">{product.sku}</TableCell>
+                                <TableCell>{product["name"]}</TableCell>
+                                <TableCell>{product["dqty"]}</TableCell>
                                 <TableCell>
                                     <DeleteIcon
                                         // add onClick method here
-                                        onClick={() => props.removeCar(idx)}
-                                        className="icon text-red" />
+                                        onClick={() => props.deleteSKU(index)}
+                                        className="icon text-red" 
+                                    />
                                 </TableCell>
                             </TableRow>
                         ))}
-                        </TableBody>
-                    </Table>
-                </Container>
-                
-            </div>
-        )
-    }
+                    </TableBody>
+
+                </Table>
+
+
+            </Container>
+            
+        </div>
+    )
 }
+
 
 
 

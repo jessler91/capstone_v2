@@ -1,5 +1,7 @@
 export default {
-    user:[
+
+
+    users:[
 
          { 
             username: 'test-user-1',
@@ -14,4 +16,27 @@ export default {
             loggedIn:false,
          },
     ],
+    
+    products:[
+
+      { 
+         sku: 'AML',
+         name: 'Lotion',
+         qty: 801,
+      },
+      { 
+         sku: 'AMF',
+         name: 'Flakes',
+         qty: 1778,
+      },
+      { 
+         sku: 'AMO',
+         name: 'Oil',
+         qty: 778,
+      },
+   ],
+
+
+   
+    
   };
