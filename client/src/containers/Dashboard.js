@@ -12,8 +12,8 @@ const mapStateToProps = (state) => {
 // add mapDispatchToProps function here
 const mapDispatchToProps = (dispatch) => {
     return {
-        addSKU: (products) => dispatch(addSKU(products),
-        // deleteSKU: (index) => dispatch(deleteSKU(index))
+        // addSKU: (products) => dispatch(addSKU(products),
+        // deleteSKU: (index) => dispatch(deleteSKU(index)),
     }
 }
 

@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 
 
-const user = (state = [], action) => {
+const users = (state = [], action) => {
     switch(action.type) {
         case 'LOGIN':
             // document.cookie = "loggedIn=true;max-age=60*1000"
@@ -43,4 +43,4 @@ const products = (state = [], action) => {
 
 
 
-export default combineReducers({ user, products })
+export default combineReducers({ users, products })

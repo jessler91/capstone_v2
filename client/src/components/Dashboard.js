@@ -11,12 +11,14 @@ import {
 } from '@material-ui/core'
 
 import DeleteIcon from '@material-ui/icons/Delete'
+// import { addSKU } from '../redux/actions'
 
 const Dashboard = (props) => {
     return (
         <div>
 
             <p>Here is the dashboard, map through skus json file and display Products</p>
+            <AddSKU />
 
             <Container maxWidth="lg" className="sku-dashboard-container">
 
