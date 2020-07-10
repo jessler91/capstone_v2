@@ -2,11 +2,11 @@
     "name": "capstone_v2_main",
     "version": "1.0.0",
     "description": "setup second try",
-    "main": "./server/server.js",
+    "main": "server.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "./server/node server.js",
-      "server": "./server/nodemon server.js"
+      "start": "node server/server.js",
+      "server": "nodemon server/server.js"
     },
     "author": "Justin Essler",
     "license": "MIT"
