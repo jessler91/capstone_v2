@@ -5,13 +5,10 @@
     "main": "./server/server.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "./server/node server.js && ./client/react-scripts start",
+      "start": "./server/node server.js",
       "server": "./server/nodemon server.js"
     },
     "author": "Justin Essler",
-    "license": "MIT",
-    "devDependencies": {
-      "nodemon": "^2.0.4"
-    }
+    "license": "MIT"
 
 }
