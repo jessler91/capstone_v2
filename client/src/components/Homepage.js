@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Container, Divider, Switch } from '@material-ui/core'
+import HPVideo from "./HPVideo/"
 
 // This is the Homepage of my App
 // This page shouldnt have state
@@ -22,14 +23,9 @@ export default class Homepage extends Component {
 
                     <Divider />
 
-                    {/* <video src="../assets/hp-scroll.mp4" autostart="false" height="400" width="744" /> */}
-                    {/* <a href="../assets/hp-scroll.mp4" title="Download movie">film name</a> */}
-                    {/* // Insert Video Here */}
+                    {/* <HPVideo /> */}
 
 
-                    {/* <video width="320" height="240" controlssrc="homepage-scroll" type="video/mp4">
-                        <source src="homepage-scroll" type="video/mp4">
-                    </video> */}
 
                 </Container>
             </div>

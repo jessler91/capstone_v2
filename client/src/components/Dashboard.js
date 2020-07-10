@@ -18,7 +18,7 @@ const Dashboard = (props) => {
         <div>
 
             <p>Here is the dashboard, map through skus json file and display Products</p>
-            <AddSKU />
+            {/* <AddSKU /> */}
 
             <Container maxWidth="lg" className="sku-dashboard-container">
 
@@ -42,10 +42,10 @@ const Dashboard = (props) => {
 
                     <TableBody>
                         {props.products.map((product, index) => (
-                            <TableRow key={product.id}>
+                            <TableRow key={product.sku}>
                                 <TableCell component="th" scope="row">{product.sku}</TableCell>
                                 <TableCell>{product["name"]}</TableCell>
-                                <TableCell>{product["dqty"]}</TableCell>
+                                <TableCell>{product["qty"]}</TableCell>
                                 <TableCell>
                                     <DeleteIcon
                                         // add onClick method here
