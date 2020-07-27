@@ -43,6 +43,8 @@ VALUES
   ("AMF-1-FBA","B00GHSY86","Magnesium Flakes 1lbs","todays date"),
   ("AMF-4-FBA","B00GHSYGH","Magnesium Flakes 4lbs","todays date"),
   ("AMF-8-FBA","B00GHSYBC","Magnesium Flakes 8lbs","todays date");
+  ("sku","....",".....","....");
+
 
 SELECT * FROM products;
 

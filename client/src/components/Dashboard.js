@@ -1,14 +1,14 @@
 import React from 'react'
 
 
-import {
-    Container,
-    Table,
-    TableBody,
-    TableCell,
-    TableHead,
-    TableRow
-} from '@material-ui/core'
+// import {
+//     Container,
+//     Table,
+//     TableBody,
+//     TableCell,
+//     TableHead,
+//     TableRow
+// } from '@material-ui/core'
 
 import DeleteIcon from '@material-ui/icons/Delete'
 // import { addSKU } from '../redux/actions'
@@ -20,7 +20,7 @@ const Dashboard = (props) => {
             <p>Here is the dashboard, map through skus json file and display Products</p>
             {/* <AddSKU /> */}
 
-            <Container maxWidth="lg" className="sku-dashboard-container">
+            {/* <Container maxWidth="lg" className="sku-dashboard-container">
 
                 <h4>Welcome, Dashboard User Dan</h4>
                 <div className="flex-container">
@@ -60,7 +60,7 @@ const Dashboard = (props) => {
                 </Table>
 
 
-            </Container>
+            </Container> */}
             
         </div>
     )

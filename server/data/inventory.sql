@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS inv_snapshop_import (
+CREATE TABLE IF NOT EXISTS inventory (
     `sku` VARCHAR(13) CHARACTER SET utf8,
     `fnsku` VARCHAR(10) CHARACTER SET utf8,
     `asin` VARCHAR(10) CHARACTER SET utf8,

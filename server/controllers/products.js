@@ -37,6 +37,7 @@ function getProductsById(req, res) {
             console.log({ 'message': 'Error occurred: ' + err })
             return res.status(500).send('An unexpected error occurred')
         }
+        console.log(res.json(rows))
         return res.json(rows);
     })
 
