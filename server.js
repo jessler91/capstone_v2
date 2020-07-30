@@ -1,17 +1,21 @@
 // ACA Capstone Server Index File
 
+
 // import 3rd party
 const express = require("express");
 const bodyParser = require("body-parser");
-const path = require("path");
+// const path = require("path");
+
 
 // import 1st party
 const productsRoutes = require("./server/routes/products");
 const usersRoutes = require('./server/routes/users')
 
+
 // variables
 const app = express();
 const port = process.env.PORT || 5000;
+
 
 // middleware - express, bodyParser, and routes middleware
 app.use(express.static("public"))
@@ -19,6 +23,7 @@ app.use(bodyParser.json())
 app.use(productsRoutes);
 app.use(usersRoutes)
 // app.use("/", productsRoutes);
+// app.use(express.static(path.join(_dirname, './public')))
 
 
 // Default Route
