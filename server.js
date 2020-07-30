@@ -6,8 +6,8 @@ const bodyParser = require("body-parser");
 const path = require("path");
 
 // import 1st party
-const productsRoutes = require("./routes/products");
-const usersRoutes = require('./routes/users')
+const productsRoutes = require("./server/routes/products");
+const usersRoutes = require('./server/routes/users')
 
 // variables
 const app = express();
