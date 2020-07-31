@@ -12,6 +12,10 @@ export default class Homepage extends Component {
             <div className="App-Homepage">
 
                 <Container maxWidth="sm">
+                    
+                    <br></br>
+                    <br></br>
+
                     <h1 style={{ textAlign: 'center' }}>Justins FBA Planning Shipment App</h1>
                     <p style={{ textAlign: 'center' }}>Are you a seller tired of endlessly scrolling in excel to manage Amazon FBA Inventory?</p>
 

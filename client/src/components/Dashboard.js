@@ -51,7 +51,7 @@ const Dashboard = (props) => {
                             <TableRow key={id}>
 
                             <TableCell align="left">
-                                <Link to={`/sku-details/${product.id}`}>{products.sku}</Link>
+                                <Link to={`/sku-details/${product.id}`}>{product.sku}</Link>
                             </TableCell>
                             <TableCell align="left">{product.name}</TableCell>
                             <TableCell align="left">{product.qty}</TableCell>
