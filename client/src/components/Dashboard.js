@@ -18,7 +18,6 @@ const Dashboard = (props) => {
         <div>
 
             <p>Here is the dashboard, map through skus json file and display Products</p>
-            {/* <AddSKU /> */}
 
             {/* <Container maxWidth="lg" className="sku-dashboard-container">
 

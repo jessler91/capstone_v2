@@ -1,20 +1,13 @@
 import { combineReducers } from 'redux'
 
 
-const users = (state = [], action) => {
+const user = (state = [], action) => {
     switch(action.type) {
-        case 'LOGIN':
-            // document.cookie = "loggedIn=true;max-age=60*1000"
-            // window.location.replace("/listings")
-            // console.log(cookies)
-            // return user
-            console.log('loggedin')
 
-            // handleTextChange = (e) => {
-            //   const state = { ...this.state }
-            //   state[e.target.name] = e.target.value
-            //   this.setState(state)
-            // }
+        case 'LOGIN':
+            document.cookie = "loggedIn=true;max-age=60*10000"
+            window.location.replace("/dashboard")
+            return user
 
         case 'LOGOUT':
             // 
@@ -29,18 +22,21 @@ const users = (state = [], action) => {
 
 const products = (state = [], action) => {
     switch(action.type) {
-        // case 'ADD_PRODUCT':
-        //     let SKU = products.sku
-        //     let city = products.city
-        //     let state = products.state
-        //     return [ ...products, action.value ]
+
+        case 'ADD_PRODUCT':
+            return [ ...state, action.value ];
+
+        case 'REMOVE_PRODUCT':
+            const products = [ ...state ];
+            products.splice(action.value, 1);
+      return products;
 
         default:
-            return state
+            return state;
     }
 }
 
 
 
 
-export default combineReducers({ users, products })
+export default combineReducers({ user, products })

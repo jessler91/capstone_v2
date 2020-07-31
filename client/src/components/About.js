@@ -1,26 +1,13 @@
 
 import React, { Component } from 'react'
-import { Container, Divider, Switch } from '@material-ui/core'
+import { Container, Divider} from '@material-ui/core'
 
 class About extends Component {
+    
     state = {
         checked: true,
         heading: 'About planningMaster.com'
     }
-
-    // toggleSwitch = () => {
-    //     const newVal = !this.state.checked
-    //     if (newVal) {
-    //         return this.setState({
-    //             heading: 'About SB.com',
-    //             checked: newVal
-    //         })
-    //     }
-    //     return this.setState({
-    //         heading: 'About SB.com',
-    //         checked: newVal
-    //     })
-    // }
 
     render() {
         return (

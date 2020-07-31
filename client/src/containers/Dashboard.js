@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import Dashboard from '../components/Dashboard'
-import { deleteSKU, addSKU } from '../redux/actions'
+// import { deleteSKU, addSKU } from '../redux/actions'
 
 const mapStateToProps = (state) => {
     return {

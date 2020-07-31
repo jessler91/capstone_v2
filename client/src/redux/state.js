@@ -1,7 +1,6 @@
 export default {
 
-
-    users:[
+    user:[
 
          { 
             username: 'test-user-1',
@@ -36,7 +35,4 @@ export default {
       },
    ],
 
-
-   
-    
   };
