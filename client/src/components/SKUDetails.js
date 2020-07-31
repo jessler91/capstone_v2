@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react'
-import { Container, Divider, Switch } from '@material-ui/core'
+import { Container } from '@material-ui/core'
 
 class SKUDetails extends Component {
 
@@ -9,7 +9,6 @@ class SKUDetails extends Component {
             <div className="text-gray">
                 <Container maxWidth="sm">
                     <h1 style={{ textAlign: 'center' }}>SKUDetails</h1>
-        
                 </Container>
             </div>
         )
