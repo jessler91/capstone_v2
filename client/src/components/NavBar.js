@@ -5,6 +5,14 @@ import MenuIcon from '@material-ui/icons/Menu'
 import { Link } from 'react-router-dom'
 import '../App.css'
 
+
+const ulStyle = {
+    display: "flex", 
+    width:"20%", 
+    justifyContent: "space-around", 
+    listStyle: "none"
+  }
+
 const TopNavBar = () => {
     return (
         
@@ -17,7 +25,7 @@ const TopNavBar = () => {
                 <Typography variant="h6" style={{ flexGrow: "1" }}>
                     Enviromedica FBA_PM
                 </Typography>
-                <ul className="nav-list">
+                <ul style={ulStyle} className="nav-list">
                     <li className="nav-list-item">
                         <Link to="/">Home</Link>
                     </li>
