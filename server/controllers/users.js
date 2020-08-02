@@ -41,9 +41,9 @@ const updateUserById = (req, res) => {
   })
 }
 
-const deleteUserByFirstName = (req, res) => {
-  let sql = "DELETE FROM users WHERE first_name = ?"
-  sql = mysql.format(sql, [ req.params.first_name ])
+const deleteUserById = (req, res) => {
+  let sql = "DELETE FROM users WHERE id = ?"
+  sql = mysql.format(sql, [ req.params.id ])
 
   pool.query(sql, (err, results) => {
     if (err) return handleSQLError(res, err)
@@ -56,5 +56,5 @@ module.exports = {
   getUserById,
   createUser,
   updateUserById,
-  deleteUserByFirstName
+  deleteUserById
 }
