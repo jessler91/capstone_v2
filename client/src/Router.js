@@ -16,6 +16,7 @@ const checkAuth = () => {
 }
 
 // Write ProtectedRoute function here
+
 const ProtectedRoute = ({component: Component, ...rest}) => {
     return (
         <Route
@@ -34,7 +35,7 @@ const Router = () => {
             <Route path="/about" component={About} />
             <Route path="/login" component={Login} />
             <Route path="/dashboard" component={Dashboard} />
-            <Route path="/sku-details" component={SKUDetails} />    
+            <ProtectedRoute path="/sku-details" component={SKUDetails} />    
         </Switch>
     );
 };
