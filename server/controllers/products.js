@@ -3,7 +3,7 @@
 
 const mysql = require('mysql')
 const pool = require('../sql/connection')
-
+const { handleSQLError } = require('../sql/error')
 
 // Get All Products
 function getProducts(req, res) {
@@ -13,8 +13,8 @@ function getProducts(req, res) {
 
     pool.query(sql, (err, rows) => {
         if (err) {
-          console.log({ 'message': 'Error occurred: ' + err })
-          return res.status(500).send('An unexpected error occurred')
+            if (err) return handleSQLError(res, err)
+            return res.json(rows);
         }
         console.log(res.json(rows));
         return res.json(rows);
@@ -30,14 +30,12 @@ function getProductsById(req, res) {
 
     let sql = `SELECT ?? FROM ?? WHERE ?? = ? `
     sql = mysql.format(sql, ['*', 'products', 'merchant_sku', merchantId])
-        console.log(merchantId);
 
     pool.query(sql, (err, rows) => {
         if (err) {
-            console.log({ 'message': 'Error occurred: ' + err })
-            return res.status(500).send('An unexpected error occurred')
+            if (err) return handleSQLError(res, err)
+            return res.json(rows);
         }
-        console.log(res.json(rows))
         return res.json(rows);
     })
 

@@ -1,18 +1,9 @@
-// ACA Capstone Server Index File
-
-
-// import 3rd party
 const express = require("express");
 const bodyParser = require("body-parser");
 // const path = require("path");
-
-
-// import 1st party
 const productsRoutes = require("./server/routes/products");
 const usersRoutes = require('./server/routes/users')
 
-
-// variables
 const app = express();
 const port = process.env.PORT || 5000;
 

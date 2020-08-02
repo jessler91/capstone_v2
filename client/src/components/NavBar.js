@@ -13,6 +13,10 @@ const ulStyle = {
     listStyle: "none"
   }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0b34aa2ea84cb14636c1fa8a48017e1e1c2ec1fc
 const TopNavBar = () => {
     return (
         

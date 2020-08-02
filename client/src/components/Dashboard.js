@@ -1,16 +1,17 @@
 import React from 'react'
+// import banner from './banner'; // gives image path
 
-
-// import {
-//     Container,
-//     Table,
-//     TableBody,
-//     TableCell,
-//     TableHead,
-//     TableRow
-// } from '@material-ui/core'
+import {
+    Container,
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TableRow
+} from '@material-ui/core'
 
 import DeleteIcon from '@material-ui/icons/Delete'
+import { Link } from 'react-router-dom'
 // import { addSKU } from '../redux/actions'
 
 const Dashboard = (props) => {
@@ -18,9 +19,8 @@ const Dashboard = (props) => {
         <div>
 
             <p>Here is the dashboard, map through skus json file and display Products</p>
-            {/* <AddSKU /> */}
 
-            {/* <Container maxWidth="lg" className="sku-dashboard-container">
+            <Container maxWidth="lg" className="sku-dashboard-container">
 
                 <h4>Welcome, Dashboard User Dan</h4>
                 <div className="flex-container">
@@ -41,26 +41,37 @@ const Dashboard = (props) => {
 
 
                     <TableBody>
-                        {props.products.map((product, index) => (
-                            <TableRow key={product.sku}>
-                                <TableCell component="th" scope="row">{product.sku}</TableCell>
-                                <TableCell>{product["name"]}</TableCell>
-                                <TableCell>{product["qty"]}</TableCell>
-                                <TableCell>
-                                    <DeleteIcon
-                                        // add onClick method here
-                                        onClick={() => props.deleteSKU(index)}
-                                        className="icon text-red" 
-                                    />
-                                </TableCell>
+
+                    {console.log("props" + props)}
+                    
+                    {props.products.map((product, id) => {
+                        return (
+                            
+
+                            <TableRow key={id}>
+
+                            <TableCell align="left">
+                                <Link to={`/sku-details/${product.id}`}>{product.sku}</Link>
+                            </TableCell>
+                            <TableCell align="left">{product.name}</TableCell>
+                            <TableCell align="left">{product.qty}</TableCell>
+                            <TableCell align="left">{product.name}</TableCell>
+                        {document.cookie === "loggedIn=true" ? (
+                            <TableCell>
+                                <DeleteIcon onClick={() => props.removeProduct(id)} />
+                            </TableCell>
+                        ) : null}
+
                             </TableRow>
-                        ))}
-                    </TableBody>
+                        );
+                    })}
+
+                </TableBody>
 
                 </Table>
 
 
-            </Container> */}
+            </Container>
             
         </div>
     )

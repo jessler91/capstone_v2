@@ -1,47 +1,69 @@
-import React from 'react'
-import { TextField,Button,Container } from '@material-ui/core'
+import React, { Component } from 'react';
+import { Input, Button } from '@material-ui/core';
 
-const Login = (props) => {
+const divStyle = {
+  width: "100%", 
+  textAlign: "center", 
+  paddingTop: "45px"
+}
 
-  // still need to declare username and pass 
+const buttonStyle = {
+  marginTop: "15px"
+}
 
-  const _onSubmit = (e) => {
-    e.preventdefault();
-    console.log('booom')
-    props.login()
+class Login extends Component {
+  state = {
+    username: '',
+    password: ''
   }
 
-    return (
-      <div className="App">
-        <Container maxWidth="sm">
-          <form className="login-form" onSubmit={_onSubmit}>
-            <TextField
-              required
-              // onChange={props.handleTextChange}
-              // value={user.username}
-              placeholder='username'
-              name="username"
-              type="text" 
-            />
-            <TextField
-              required
-              // onChange={props.handleTextChange}
-              // value={user.password}
-              placeholder='password'
-              name="password"
-              type="password" 
-            />
-            <Button
-              type="submit"
-              className="login-button"
-              variant="contained"
-              color="primary"
-            >Login</Button>
-          </form>
-        </Container>
-      </div>
-    );
 
+  handleTextChange = (event) => {
+    const state = { ...this.state };
+    state[event.target.name] = event.target.value;
+    this.setState(state);
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+    document.cookie = 'loggedIn=true';
+    this.props.setUser(this.state.username);
+    this.props.history.push('/homepage');
+  }
+
+  render() {
+    return (
+      <div style={divStyle}>
+        <form action="" onSubmit={this.handleSubmit}>
+          <Input
+            required
+            placeholder="username"
+            onChange={this.handleTextChange}
+            value={this.state.username}
+            name="username"
+            >
+          </Input>
+          <br />
+          <Input
+            required
+            placeholder="password"
+            onChange={this.handleTextChange}
+            value={this.state.password}
+            name="password"
+            type="password"
+            >
+          </Input>
+          <br />
+          <Button 
+            type="submit"
+            variant="contained"
+            style={buttonStyle}
+            >login
+          </Button>
+        </form>
+      </div>
+    )
+  }
 }
 
 export default Login;
