@@ -13,11 +13,11 @@ function getProducts(req, res) {
 
     pool.query(sql, (err, rows) => {
         if (err) {
-            if (err) return handleSQLError(res, err)
-            return res.json(rows);
+            return handleSQLError()
         }
-        console.log(res.json(rows));
-        return res.json(rows);
+        // console.log(res.json(rows));
+        res.json(rows);
+        return;
     });
 
 }
@@ -32,11 +32,11 @@ function getProductsById(req, res) {
     sql = mysql.format(sql, ['*', 'products', 'merchant_sku', merchantId])
 
     pool.query(sql, (err, rows) => {
-        if (err) {
-            if (err) return handleSQLError(res, err)
-            return res.json(rows);
+        if (err) { 
+            return handleSQLError()
         }
-        return res.json(rows);
+        res.json(rows);
+        return;
     })
 
 }
