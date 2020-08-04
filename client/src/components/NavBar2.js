@@ -13,7 +13,7 @@ const ulStyle = {
     listStyle: "none"
   }
 
-const TopNavBar = () => {
+const TopNavBar2 = () => {
     return (
 
         {document.cookie === "loggedIn=true" ? 
@@ -25,16 +25,12 @@ const TopNavBar = () => {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" style={{ flexGrow: "1" }}>
-                        Enviromedica FBA_PM
+                        FBA_PM
                     </Typography>
                     <ul style={ulStyle} className="nav-list">
                         <li className="nav-list-item">
                             <Link to="/">Home</Link>
                         </li>
-                        <li className="nav-list-item">
-                            <Link to="/about">About</Link>
-                        </li>
-
                         <li className="nav-list-item">
                             <Link to="/dashboard">Dashboard</Link>
                         </li>
@@ -45,17 +41,15 @@ const TopNavBar = () => {
                 </Toolbar>
             </AppBar>
 
-
             ) : (
 
-                
                 <AppBar position="relative"color="secondary">
                 <Toolbar>
                     <IconButton color="default">
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" style={{ flexGrow: "1" }}>
-                        Enviromedica FBA_PM
+                        FBA_PM
                     </Typography>
                     <ul style={ulStyle} className="nav-list">
                         <li className="nav-list-item">
@@ -67,19 +61,14 @@ const TopNavBar = () => {
                         <li className="nav-list-item">
                             <Link to="/login">Login</Link>
                         </li>
-                        <li className="nav-list-item">
-                            <Link to="/dashboard">Dashboard</Link>
-                        </li>
                     </ul>
                 </Toolbar>
             </AppBar>
 
-
             )       
         }
-        
-        
+
     )
 }
 
-export default TopNavBar;
+export default TopNavBar2;

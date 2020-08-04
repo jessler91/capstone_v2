@@ -8,7 +8,13 @@ class SKUDetails extends Component {
         return (
             <div className="text-gray">
                 <Container maxWidth="sm">
-                    <h1 style={{ textAlign: 'center' }}>SKUDetails</h1>
+                    
+                    <h1 style={{ textAlign: 'center' }}>Additional SKU Details</h1>
+
+                    {/* Additional SKU Details and charts regarding the inventoy status of the porduct */}
+                    {/* Obvisously I did not get this done */}
+
+
                 </Container>
             </div>
         )

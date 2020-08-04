@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router'
 import Homepage from './components/Homepage'
 import About from './components/About'
 import Login from './containers/Login'
+import Logout from './containers/Logout'
 import Dashboard from './containers/Dashboard'
 import SKUDetails from './containers/SKUDetails'
 import cookie from 'cookie'
@@ -34,7 +35,7 @@ const Router = () => {
             <Route exact path="/" component={Homepage} />
             <Route path="/about" component={About} />
             <Route path="/login" component={Login} />
-            {/* <Route path="/logout" component={Logout} /> */}
+            <Route path="/logout" component={Logout} />
             <ProtectedRoute path="/dashboard" component={Dashboard} />
             <ProtectedRoute path="/sku-details" component={SKUDetails} />    
         </Switch>

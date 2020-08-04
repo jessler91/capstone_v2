@@ -5,6 +5,8 @@ const mysql = require('mysql')
 const pool = require('../sql/connection')
 const { handleSQLError } = require('../sql/error')
 
+
+
 // Get All Products
 function getProducts(req, res) {
 
@@ -21,8 +23,6 @@ function getProducts(req, res) {
     });
 
 }
-
-
 // Get All Products2
 function getProducts2(req, res) {
 
@@ -59,7 +59,6 @@ function getProductsById(req, res) {
     })
 
 }
-
 // Get One Product2
 function getProducts2ById(req, res) {
     
@@ -80,11 +79,54 @@ function getProducts2ById(req, res) {
 
 
 
+
+// Sales Products Controllers
+
+// Get All Products Sales
+function getSales(req, res) {
+
+    let sql = `SELECT ?? FROM ??`
+    sql = mysql.format(sql, ['*', 'sales30_import',]);
+
+    pool.query(sql, (err, rows) => {
+        if (err) {
+            return handleSQLError()
+        }
+        // console.log(res.json(rows));
+        res.json(rows);
+        return;
+    });
+
+}
+
+// Get One Products Sales Data
+function getSalesById(req, res) {
+    
+    const ASIN = req.params.id;
+
+    let sql = `SELECT ?? FROM ?? WHERE ?? = ? `
+    sql = mysql.format(sql, ['*', 'sales30_import', 'ASIN', ASIN])
+
+    pool.query(sql, (err, rows) => {
+        if (err) { 
+            return handleSQLError()
+        }
+        res.json(rows);
+        return;
+    })
+
+}
+
+
+
+
 module.exports = {
     getProducts,
     getProductsById,
     getProducts2,
     getProducts2ById,
+    getSales,
+    getSalesById,
     // addProduct,
     // deleteProduct,
 }
