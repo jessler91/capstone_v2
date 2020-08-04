@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS sales30_import (
+CREATE TABLE IF NOT EXISTS sales30 (
     `Parent_ASIN` VARCHAR(10) CHARACTER SET utf8,
     `Child_ASIN` VARCHAR(10) CHARACTER SET utf8,
     `Title` VARCHAR(194) CHARACTER SET utf8,
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS sales30_import (
     `Total_Order_Items` INT,
     `Total_Order_Items_B2B` INT
 );
-INSERT INTO sales30_import VALUES
+INSERT INTO sales30 VALUES
     ('B07KBG42GJ','B00BBD508C','Ancient Minerals Magnesium Bath Flakes of Pure Genuine Zechstein Chloride - Resealable Magnesium Supplement Bag That Will Outperform Leading Epsom Salts (8 lb)',8940,20.60,13390,20.96,99,7830,100,87.58,1.12,'$248,533.10','$3,165.33',6529,78),
     ('B07KBG42GJ','B005F1ATJQ','Ancient Minerals Magnesium Bath Flakes of Pure Genuine Zechstein Chloride - Resealable Magnesium Supplement Bag That Will Outperform Leading Epsom Salts (26.4 Ounce)',3634,8.37,5284,8.27,99,1666,21,45.84,0.58,'$17,549.79','$215.23',1470,19),
     ('B07GCSNT3H','B001AD0HL8','Ancient Minerals Magnesium Oil Spray Bottle of Pure Genuine Zechstein Magnesium Chloride - Topical Magnesium Supplement for Skin Application and Dermal Absorption (8 Fl Oz)',5077,11.70,7357,11.51,99,1997,19,39.33,0.37,'$40,119.79','$376.71',1882,18),

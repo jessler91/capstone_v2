@@ -11,7 +11,7 @@ const { handleSQLError } = require('../sql/error')
 function getProducts(req, res) {
 
     let sql = `SELECT ?? FROM ??`
-    sql = mysql.format(sql, ['*', 'products',]);
+    sql = mysql.format(sql, ['*', 'invenory',]);
 
     pool.query(sql, (err, rows) => {
         if (err) {
@@ -23,22 +23,22 @@ function getProducts(req, res) {
     });
 
 }
-// Get All Products2
-function getProducts2(req, res) {
+// // Get All Products2
+// function getProducts2(req, res) {
 
-    let sql = `SELECT ?? FROM ??`
-    sql = mysql.format(sql, ['*', 'inv_snapshop_import',]);
+//     let sql = `SELECT ?? FROM ??`
+//     sql = mysql.format(sql, ['*', 'inventory',]);
 
-    pool.query(sql, (err, rows) => {
-        if (err) {
-            return handleSQLError()
-        }
-        // console.log(res.json(rows));
-        res.json(rows);
-        return;
-    });
+//     pool.query(sql, (err, rows) => {
+//         if (err) {
+//             return handleSQLError()
+//         }
+//         // console.log(res.json(rows));
+//         res.json(rows);
+//         return;
+//     });
 
-}
+// }
 
 
 
@@ -48,7 +48,7 @@ function getProductsById(req, res) {
     const merchantId = req.params.id;
 
     let sql = `SELECT ?? FROM ?? WHERE ?? = ? `
-    sql = mysql.format(sql, ['*', 'products', 'merchant_sku', merchantId])
+    sql = mysql.format(sql, ['*', 'inventory', 'sku', merchantId])
 
     pool.query(sql, (err, rows) => {
         if (err) { 
@@ -59,23 +59,23 @@ function getProductsById(req, res) {
     })
 
 }
-// Get One Product2
-function getProducts2ById(req, res) {
+// // Get One Product2
+// function getProducts2ById(req, res) {
     
-    const merchantId = req.params.id;
+//     const merchantId = req.params.id;
 
-    let sql = `SELECT ?? FROM ?? WHERE ?? = ? `
-    sql = mysql.format(sql, ['*', 'products', 'merchant_sku', merchantId])
+//     let sql = `SELECT ?? FROM ?? WHERE ?? = ? `
+//     sql = mysql.format(sql, ['*', 'inventory', 'merchant_sku', merchantId])
 
-    pool.query(sql, (err, rows) => {
-        if (err) { 
-            return handleSQLError()
-        }
-        res.json(rows);
-        return;
-    })
+//     pool.query(sql, (err, rows) => {
+//         if (err) { 
+//             return handleSQLError()
+//         }
+//         res.json(rows);
+//         return;
+//     })
 
-}
+// }
 
 
 
@@ -86,7 +86,7 @@ function getProducts2ById(req, res) {
 function getSales(req, res) {
 
     let sql = `SELECT ?? FROM ??`
-    sql = mysql.format(sql, ['*', 'sales30_import',]);
+    sql = mysql.format(sql, ['*', 'sales30',]);
 
     pool.query(sql, (err, rows) => {
         if (err) {
@@ -105,7 +105,7 @@ function getSalesById(req, res) {
     const ASIN = req.params.id;
 
     let sql = `SELECT ?? FROM ?? WHERE ?? = ? `
-    sql = mysql.format(sql, ['*', 'sales30_import', 'ASIN', ASIN])
+    sql = mysql.format(sql, ['*', 'sales30', 'Child_ASIN', ASIN])
 
     pool.query(sql, (err, rows) => {
         if (err) { 
@@ -123,8 +123,8 @@ function getSalesById(req, res) {
 module.exports = {
     getProducts,
     getProductsById,
-    getProducts2,
-    getProducts2ById,
+    // getProducts2,
+    // getProducts2ById,
     getSales,
     getSalesById,
     // addProduct,
