@@ -20,10 +20,10 @@ app.use(usersRoutes)
 
 
 // Default Route
-app.get('/', (req, res) => {
-    res.json(
-        `Welcome to Justins Capstone Server V2 not production`)
-});
+// app.get('/', (req, res) => {
+//     res.json(
+//         `Welcome to Justins Capstone Server V2 not production`)
+// });
 
 // Serve static assets if in production
 if (process.env.NODE_ENV === 'production') {
