@@ -1,4 +1,3 @@
-  
 // Controllers File
 
 const mysql = require('mysql')
@@ -7,11 +6,11 @@ const { handleSQLError } = require('../sql/error')
 
 
 
-// Get All Products
+// Get All Products Inventory
 function getProducts(req, res) {
 
     let sql = `SELECT ?? FROM ??`
-    sql = mysql.format(sql, ['*', 'invenory',]);
+    sql = mysql.format(sql, ['*', 'inventory',]);
 
     pool.query(sql, (err, rows) => {
         if (err) {
@@ -23,26 +22,9 @@ function getProducts(req, res) {
     });
 
 }
-// // Get All Products2
-// function getProducts2(req, res) {
-
-//     let sql = `SELECT ?? FROM ??`
-//     sql = mysql.format(sql, ['*', 'inventory',]);
-
-//     pool.query(sql, (err, rows) => {
-//         if (err) {
-//             return handleSQLError()
-//         }
-//         // console.log(res.json(rows));
-//         res.json(rows);
-//         return;
-//     });
-
-// }
 
 
-
-// Get One Product
+// Get One Product Inventory
 function getProductsById(req, res) {
     
     const merchantId = req.params.id;
@@ -59,23 +41,6 @@ function getProductsById(req, res) {
     })
 
 }
-// // Get One Product2
-// function getProducts2ById(req, res) {
-    
-//     const merchantId = req.params.id;
-
-//     let sql = `SELECT ?? FROM ?? WHERE ?? = ? `
-//     sql = mysql.format(sql, ['*', 'inventory', 'merchant_sku', merchantId])
-
-//     pool.query(sql, (err, rows) => {
-//         if (err) { 
-//             return handleSQLError()
-//         }
-//         res.json(rows);
-//         return;
-//     })
-
-// }
 
 
 
@@ -86,7 +51,7 @@ function getProductsById(req, res) {
 function getSales(req, res) {
 
     let sql = `SELECT ?? FROM ??`
-    sql = mysql.format(sql, ['*', 'sales30',]);
+    sql = mysql.format(sql, ['*', 'sales30']);
 
     pool.query(sql, (err, rows) => {
         if (err) {
@@ -123,8 +88,6 @@ function getSalesById(req, res) {
 module.exports = {
     getProducts,
     getProductsById,
-    // getProducts2,
-    // getProducts2ById,
     getSales,
     getSalesById,
     // addProduct,

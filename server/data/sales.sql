@@ -1,3 +1,5 @@
+use checkpoint2;
+
 CREATE TABLE IF NOT EXISTS sales30 (
     `Parent_ASIN` VARCHAR(10) CHARACTER SET utf8,
     `Child_ASIN` VARCHAR(10) CHARACTER SET utf8,

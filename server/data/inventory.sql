@@ -1,4 +1,4 @@
-use checkpoint2
+use checkpoint2;
 
 CREATE TABLE IF NOT EXISTS inventory (
     `sku` VARCHAR(13) CHARACTER SET utf8,
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS inventory (
     `afn_reserved_future_supply` INT,
     `afn_future_supply_buyable` INT
 );
-INSERT INTO iventory VALUES
+INSERT INTO inventory VALUES
     ('AMF-1-FBA','X001Y1DPYN','B005F1ATJQ','Ancient Minerals Magnesium Bath Flakes of Pure Genuine Zechstein Chloride - Resealable Magnesium Supplement Bag That Will Outperform Leading Epsom Salts (26.4 Ounce)','New',9.95,'No',NULL,'Yes',1451,1179,3,237,1451,0.05,0,0,0,32,0,0),
     ('AMF-150-6-FBA','X00200W4L7','B07MR2MDW8','Ancient Minerals Magnesium Bath Flakes Single-Use Magnesium Chloride Pouches (0.33lb Bag, Pack of 6)','New',18.97,'No',NULL,'Yes',74,71,0,3,74,0.12,0,0,0,0,0,0),
     ('AMF-4-FBA','X001Y1SXAJ','B06XXPLT2T','Ancient Minerals Magnesium Bath Flakes of Pure Genuine Zechstein Chloride - Resealable Magnesium Supplement Bag That Will Outperform Leading Epsom Salts (4.4 lb)','New',19.95,'No',NULL,'Yes',1335,938,13,375,1914,0.14,0,0,579,9,0,0),
