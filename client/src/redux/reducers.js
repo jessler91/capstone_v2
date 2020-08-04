@@ -22,6 +22,16 @@ const user = (state = [], action) => {
 const products = (state = [], action) => {
     switch(action.type) {
 
+        case 'PRODUCTS_LOADED':
+            return {
+                ...state,  products: action.products
+            }
+
+        case 'PRODUCTS_FAILED':
+            return {
+                ...state, error: action.err
+            }
+
         case 'ADD_PRODUCT':
             return [ ...state, action.value ];
 

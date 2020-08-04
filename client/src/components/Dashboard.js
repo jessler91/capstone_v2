@@ -74,7 +74,6 @@ const Dashboard = (props) => {
 
 
             {/* Attempting to display products from the database */}
-            <Products />
             
         </div>
     )

@@ -26,3 +26,35 @@ export const removeProduct = (index) => {
     }
 }
 
+
+
+export function getProducts() {
+    return function (dispatch) {
+        fetch("http://localhost:5000/products2/")
+        .then( response => {
+            console.log(response)
+            return response.json();
+        }).then(products => {
+            dispatch(productsLoaded(products));
+        })
+        .catch(err => {
+            console.log(err)
+            dispatch(productsFailed(err));
+        });
+    };
+}
+        
+    
+function productsLoaded(products) {
+    return {
+        type: 'PRODUCTS_LOADED',
+        products: products
+    };
+}
+
+function productsFailed(err) {
+    return {
+        type: 'PRODUCTS_FAILED',
+        error: err
+    };
+}

@@ -6,6 +6,7 @@ import Login from './containers/Login'
 import Logout from './containers/Logout'
 import Dashboard from './containers/Dashboard'
 import SKUDetails from './containers/SKUDetails'
+import Products from './containers/Products'
 import cookie from 'cookie'
 
 // // Write checkAuth function here
@@ -37,6 +38,7 @@ const Router = () => {
             <Route path="/login" component={Login} />
             <Route path="/logout" component={Logout} />
             <ProtectedRoute path="/dashboard" component={Dashboard} />
+            <ProtectedRoute path="/products" component={Products} />
             <ProtectedRoute path="/sku-details" component={SKUDetails} />    
         </Switch>
     );

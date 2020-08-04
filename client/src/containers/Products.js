@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import Products from '../components/Products'
-import { removeProduct } from '../redux/actions'
+import { removeProduct, getProducts } from '../redux/actions'
 
 const mapStateToProps = (state) => {
     return {
@@ -11,6 +11,9 @@ const mapStateToProps = (state) => {
 // add mapDispatchToProps function here
 const mapDispatchToProps = (dispatch) => {
     return {
+        getProducts: () => {
+            dispatch(getProducts())
+        }
         // addSKU: (products) => dispatch(addSKU(products),
         // removeProduct: (index) => dispatch(removeProduct(index)),
     }

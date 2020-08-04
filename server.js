@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-// const cors = require("cors");
+const cors = require("cors");
 const path = require("path");
 const productsRoutes = require("./server/routes/products");
 const usersRoutes = require('./server/routes/users')
@@ -13,7 +13,7 @@ const port = process.env.PORT || 5000;
 // middleware - express, bodyParser, and routes middleware
 app.use(express.static("public"))
 app.use(bodyParser.json())
-// app.use(cors());
+app.use(cors());
 app.use(productsRoutes);
 app.use(usersRoutes)
 // app.use("/", productsRoutes);
