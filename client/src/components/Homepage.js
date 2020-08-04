@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Container, Divider } from '@material-ui/core'
+import { Link } from 'react-router-dom'
 import HPVideo from "./HPVideo.js"
 
 // This is the Homepage of my App
@@ -11,12 +12,11 @@ export default class Homepage extends Component {
 
 
 
-        // const ulStyle = {
-        //     display: "flex", 
-        //     width:"20%", 
-        //     justifyContent: "space-around", 
-        //     listStyle: "none"
-        //   }
+        const ulStyle = {
+            // display: "flex", 
+            // justifyContent: "space-around", 
+            // listStyle: "none",
+          }
 
         return (
 
@@ -32,12 +32,9 @@ export default class Homepage extends Component {
 
                     <Divider />
 
-                    <HPVideo style={{
-                            // position: 'absolute', left: '50%', top: '50%',
-                            // transform: 'translate(-50%, -50%)'
-                    }}/>
+                    <HPVideo style={{ulStyle}} />
 
-                    <p style={{ textAlign: 'center' }}>Login to view your dashboard</p>
+                    <p style={{ textAlign: 'center', marginTop: "25px" }}><Link to="/login">Login</Link> to view your dashboard</p>
 
                 </Container>
             </div>
