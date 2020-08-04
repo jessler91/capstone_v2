@@ -4,7 +4,7 @@ import Homepage from './components/Homepage'
 import About from './components/About'
 import Login from './containers/Login'
 import Dashboard from './containers/Dashboard'
-import SKUDetails from './components/SKUDetails'
+import SKUDetails from './containers/SKUDetails'
 import cookie from 'cookie'
 
 // // Write checkAuth function here
@@ -34,7 +34,8 @@ const Router = () => {
             <Route exact path="/" component={Homepage} />
             <Route path="/about" component={About} />
             <Route path="/login" component={Login} />
-            <Route path="/dashboard" component={Dashboard} />
+            {/* <Route path="/logout" component={Logout} /> */}
+            <ProtectedRoute path="/dashboard" component={Dashboard} />
             <ProtectedRoute path="/sku-details" component={SKUDetails} />    
         </Switch>
     );

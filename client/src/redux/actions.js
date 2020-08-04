@@ -19,7 +19,7 @@ export const addSKU = (product) => {
     }
 }
 
-export const deleteSKU = (index) => {
+export const removeProduct = (index) => {
     return {
         type: 'DELETE_SKU',
         value: index

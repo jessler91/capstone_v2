@@ -1,5 +1,4 @@
 import React from 'react'
-// import banner from './banner'; // gives image path
 
 import {
     Container,
@@ -12,6 +11,7 @@ import {
 
 import DeleteIcon from '@material-ui/icons/Delete'
 import { Link } from 'react-router-dom'
+import Products from './Products'
 // import { addSKU } from '../redux/actions'
 
 const Dashboard = (props) => {
@@ -55,7 +55,6 @@ const Dashboard = (props) => {
                             </TableCell>
                             <TableCell align="left">{product.name}</TableCell>
                             <TableCell align="left">{product.qty}</TableCell>
-                            <TableCell align="left">{product.name}</TableCell>
                         {document.cookie === "loggedIn=true" ? (
                             <TableCell>
                                 <DeleteIcon onClick={() => props.removeProduct(id)} />
@@ -72,6 +71,10 @@ const Dashboard = (props) => {
 
 
             </Container>
+
+
+            {/* Attempting to display products from the database */}
+            <Products />
             
         </div>
     )

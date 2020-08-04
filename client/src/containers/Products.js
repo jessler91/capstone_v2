@@ -1,11 +1,10 @@
 import { connect } from 'react-redux'
-import Dashboard from '../components/Dashboard'
+import Products from '../components/Products'
 import { removeProduct } from '../redux/actions'
 
 const mapStateToProps = (state) => {
     return {
-        users: state.users,
-        products: state.products
+        products: state.products,
     }
 }
 
@@ -13,8 +12,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         // addSKU: (products) => dispatch(addSKU(products),
-        removeProduct: (index) => dispatch(removeProduct(index)),
+        // removeProduct: (index) => dispatch(removeProduct(index)),
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Dashboard)
+export default connect(mapStateToProps, mapDispatchToProps)(Products)
