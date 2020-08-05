@@ -25,7 +25,8 @@ export class Products extends Component {
  
 
     render() {
-        console.log("state: ", this.props);
+        console.log("props: ", this.props);
+        console.log('LENGTH: ', this.props.products.length);
         // if (this.state.loading) {
         //     return <div> loading... </div>
         // }
@@ -36,14 +37,18 @@ export class Products extends Component {
 
         return (
             <div>
-                <p>Product Sales Page</p>
+                <p>Product Inventory Page</p>
                 <Container maxWidth="lg" className="sku-dashboard-container">
                     <Table>
                         <TableHead>
                             <TableRow>
-                                <TableCell>ASIN</TableCell>
+                                <TableCell>Merchant SKU</TableCell>
+                                <TableCell>Child ASIN</TableCell>
                                 <TableCell>Product Name</TableCell>
-                                <TableCell>Quantity</TableCell>
+                                <TableCell>Fulfillable Quantity</TableCell>
+                                <TableCell>Total Quantity</TableCell>
+                                <TableCell>Inbound Receiving</TableCell>
+                                <TableCell>Inbound Working</TableCell>
                                 <TableCell>Delete</TableCell>
                             </TableRow>
                         </TableHead>
@@ -51,26 +56,25 @@ export class Products extends Component {
 
                         <TableBody>
 
-                        {console.log("props" + this.props)}
                         
-                        {this.props.products.length > 0 && this.props.products.map((product, id) => {
-                            return (
-                                
-
+                        {this.props.products.length > 0 && this.props.products.map((product, id) => (
+                           
+                            
                                 <TableRow key={id}>
 
                                     <TableCell align="left">
-                                        <Link to={`/sku-details/${product.asin}`}>{product.asin}</Link>
+                                        <Link to={`/sku-details/${product.sku}`}>{product.sku}</Link>
                                     </TableCell>
+                                    <TableCell align="left">{product.asin}</TableCell>
                                     <TableCell align="left">{product.product_name}</TableCell>
-                                    <TableCell align="left">{product.afn_warehouse_quantity}</TableCell>
-
-                                    <TableCell>
-                                        <DeleteIcon onClick={() => this.props.removeProduct(id)} />
-                                    </TableCell>
+                                    <TableCell align="left">{product.afn_fulfillable_quantity}</TableCell>
+                                    <TableCell align="left">{product.afn_total_quantity}</TableCell>
+                                    <TableCell align="left">{product.afn_inbound_receiving_quantity}</TableCell>
+                                    <TableCell align="left">{product.afn_inbound_working_quantity}</TableCell>
+                                    <TableCell>Delete</TableCell>
                                 </TableRow>
-                            );
-                        })}
+                            
+                        ))}
 
                     </TableBody>
 

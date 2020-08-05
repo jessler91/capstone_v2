@@ -30,9 +30,8 @@ export const removeProduct = (index) => {
 
 export function getProducts() {
     return function (dispatch) {
-        fetch("http://localhost:5000/products2/")
+        fetch("http://localhost:5000/products/")
         .then( response => {
-            console.log(response)
             return response.json();
         }).then(products => {
             dispatch(productsLoaded(products));
@@ -43,12 +42,11 @@ export function getProducts() {
         });
     };
 }
-        
     
 function productsLoaded(products) {
     return {
         type: 'PRODUCTS_LOADED',
-        products: products
+         products
     };
 }
 

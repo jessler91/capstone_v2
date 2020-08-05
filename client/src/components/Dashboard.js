@@ -15,10 +15,15 @@ import { Link } from 'react-router-dom'
 // import { addSKU } from '../redux/actions'
 
 const Dashboard = (props) => {
+
+
     return (
         <div>
 
-            <p>Here is our dashboard, map through skus json file and display Products</p>
+            <p style={{ marginLeft: '20px' }} >Here is our dashboard, map through skus json file and display Products</p>
+            <p style={{ marginLeft: '20px' }} >Click on the Merchant SKU column to see additional inventory details</p>
+            <p style={{ marginLeft: '20px' }} >Click on the ASIN column to see additional sales details</p>
+
 
             <Container maxWidth="lg" className="sku-dashboard-container">
 
@@ -33,9 +38,10 @@ const Dashboard = (props) => {
                     <TableHead>
                         <TableRow>
                             <TableCell>Merchant SKU</TableCell>
+                            <TableCell>ASIN</TableCell>
                             <TableCell>Display Name</TableCell>
-                            <TableCell>Quantity</TableCell>
-                            <TableCell>Delete</TableCell>
+                            <TableCell>Fulfillable Quantity</TableCell>
+                            <TableCell>Remove Listing</TableCell>
                         </TableRow>
                     </TableHead>
 
@@ -53,13 +59,13 @@ const Dashboard = (props) => {
                             <TableCell align="left">
                                 <Link to={`/sku-details/${product.id}`}>{product.sku}</Link>
                             </TableCell>
+                            <TableCell align="left">{product.asin}</TableCell>
                             <TableCell align="left">{product.name}</TableCell>
                             <TableCell align="left">{product.qty}</TableCell>
-                        {document.cookie === "loggedIn=true" ? (
                             <TableCell>
                                 <DeleteIcon onClick={() => props.removeProduct(id)} />
                             </TableCell>
-                        ) : null}
+
 
                             </TableRow>
                         );

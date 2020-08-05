@@ -10,12 +10,24 @@ export default class Homepage extends Component {
 
     render() {
 
-
-
         const ulStyle = {
             // display: "flex", 
             // justifyContent: "space-around", 
             // listStyle: "none",
+          }
+
+          const divStyle = {
+            display: "flex", 
+            justifyContent: "space-around", 
+            listStyle: "none",
+            margin: "auto",
+            marginRight: "30px",
+            width:"800",
+            height:"408",
+            // borderStyle: "5px",
+            // borderColor: "black",
+            // borderWidth: "2px",
+            border: "2px solid red"
           }
 
         return (
@@ -32,7 +44,12 @@ export default class Homepage extends Component {
 
                     <Divider />
 
-                    <HPVideo style={{ulStyle}} />
+                    {/* I spent hours trying to center this video on the page prior to recording my final video */}
+                    {/* Its unfortunante, but I am not proud of this final project */}
+
+                    <div style={{divStyle}}>
+                        <HPVideo />
+                    </div>
 
                     <p style={{ textAlign: 'center', marginTop: "25px" }}><Link to="/login">Login</Link> to view your dashboard</p>
 

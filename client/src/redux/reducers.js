@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from 'redux';
 
 
 const user = (state = [], action) => {
@@ -21,10 +21,11 @@ const user = (state = [], action) => {
 
 const products = (state = [], action) => {
     switch(action.type) {
-
         case 'PRODUCTS_LOADED':
+            const { products } = action
             return {
-                ...state,  products: action.products
+                ...state, 
+                ...products
             }
 
         case 'PRODUCTS_FAILED':
@@ -36,10 +37,10 @@ const products = (state = [], action) => {
             return [ ...state, action.value ];
 
         case 'REMOVE_PRODUCT':
-            const products = [ ...state ];
-            products.splice(action.value, 1);
-            console.log("remove product clicked")
-      return products;
+            // const products = [ ...state ];
+            // products.splice(action.value, 1);
+            // console.log("remove product clicked")
+      return {...state}
 
         default:
             return state;

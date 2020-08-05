@@ -13,6 +13,10 @@ const ulStyle = {
     listStyle: "none"
   }
 
+
+// Was never successful, 
+// but the goal of NavBar2 was to change the nagivation links if the user was logged in
+
 const TopNavBar2 = () => {
     return (
 

@@ -15,7 +15,5 @@ export default {
             loggedIn:false,
          },
     ],
-    
-    products:[],
-
+    products: []
   };
