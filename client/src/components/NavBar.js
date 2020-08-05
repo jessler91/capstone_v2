@@ -1,4 +1,3 @@
-  
 import React from 'react'
 import { AppBar, Toolbar, IconButton, Typography } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
@@ -11,7 +10,7 @@ const ulStyle = {
     width:"20%", 
     justifyContent: "space-around", 
     listStyle: "none"
-  }
+}
 
 const TopNavBar = () => {
     return (
@@ -37,6 +36,9 @@ const TopNavBar = () => {
                     </li>
                     <li className="nav-list-item">
                         <Link to="/dashboard">Dashboard</Link>
+                    </li>
+                    <li className="nav-list-item">
+                        <Link to="/products">Products</Link>
                     </li>
                 </ul>
             </Toolbar>

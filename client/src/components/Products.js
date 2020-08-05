@@ -35,45 +35,48 @@ export class Products extends Component {
         // }
 
         return (
-            <Table>
-                <TableHead>
-                    <TableRow>
-                        <TableCell>ASIN</TableCell>
-                        <TableCell>Display Name</TableCell>
-                        <TableCell>Quantity</TableCell>
-                        <TableCell>Delete</TableCell>
-                    </TableRow>
-                </TableHead>
+            <div>
+                <p>Product Sales Page</p>
+                <Container maxWidth="lg" className="sku-dashboard-container">
+                    <Table>
+                        <TableHead>
+                            <TableRow>
+                                <TableCell>ASIN</TableCell>
+                                <TableCell>Product Name</TableCell>
+                                <TableCell>Quantity</TableCell>
+                                <TableCell>Delete</TableCell>
+                            </TableRow>
+                        </TableHead>
 
 
-                <TableBody>
+                        <TableBody>
 
-                {console.log("props" + this.props)}
-                
-                { this.props.products.length > 0 && this.props.products.map((product, id) => {
-                    return (
+                        {console.log("props" + this.props)}
                         
+                        {this.props.products.length > 0 && this.props.products.map((product, id) => {
+                            return (
+                                
 
-                        <TableRow key={id}>
+                                <TableRow key={id}>
 
-                        <TableCell align="left">
-                            <Link to={`/sku-details/${product.id}`}>{product.asin}</Link>
-                        </TableCell>
-                        <TableCell align="left">{product.product_name}</TableCell>
-                        <TableCell align="left">{product.afn_warehouse_quantity}</TableCell>
-                    {document.cookie === "loggedIn=true" ? (
-                        <TableCell>
-                            <DeleteIcon onClick={() => this.props.removeProduct(id)} />
-                        </TableCell>
-                    ) : null}
+                                    <TableCell align="left">
+                                        <Link to={`/sku-details/${product.asin}`}>{product.asin}</Link>
+                                    </TableCell>
+                                    <TableCell align="left">{product.product_name}</TableCell>
+                                    <TableCell align="left">{product.afn_warehouse_quantity}</TableCell>
 
-                        </TableRow>
-                    );
-                })}
+                                    <TableCell>
+                                        <DeleteIcon onClick={() => this.props.removeProduct(id)} />
+                                    </TableCell>
+                                </TableRow>
+                            );
+                        })}
 
-            </TableBody>
+                    </TableBody>
 
-            </Table>
+                    </Table>
+                </Container>
+            </div>
         );
     }
 }

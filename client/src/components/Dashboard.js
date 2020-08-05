@@ -11,7 +11,7 @@ import {
 
 import DeleteIcon from '@material-ui/icons/Delete'
 import { Link } from 'react-router-dom'
-import Products from './Products'
+// import Products from './Products'
 // import { addSKU } from '../redux/actions'
 
 const Dashboard = (props) => {
