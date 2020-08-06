@@ -7,8 +7,6 @@ const mapStateToProps = (state) => {
         users: state.users,
         products: state.products,
         display: state.display,
-        inventory: state.inventory,
-        sales: state.sales,
     }
 }
 

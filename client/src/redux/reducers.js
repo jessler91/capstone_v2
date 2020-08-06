@@ -47,7 +47,30 @@ const products = (state = [], action) => {
     }
 }
 
+const display = (state = [], action) => {
+    switch(action.type) {
+
+        default:
+            return state
+    }
+}
+
+const inventory = (state = [], action) => {
+    switch(action.type) {
+
+        default:
+            return state
+    }
+}
+
+const sales = (state = [], action) => {
+    switch(action.type) {
+
+        default:
+            return state
+    }
+}
 
 
 
-export default combineReducers({ user, products })
+export default combineReducers({ user, products, display, inventory, sales })

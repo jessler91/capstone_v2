@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Container, Divider } from '@material-ui/core'
 import { Link } from 'react-router-dom'
 import HPVideo from "./HPVideo.js"
+import '../App.css'
 
 // This is the Homepage of my App
 // This page shouldnt have state
@@ -10,25 +11,25 @@ export default class Homepage extends Component {
 
     render() {
 
-        const ulStyle = {
+        // const ulStyle = {
             // display: "flex", 
             // justifyContent: "space-around", 
             // listStyle: "none",
-          }
+        //   }
 
-          const divStyle = {
-            display: "flex", 
-            justifyContent: "space-around", 
-            listStyle: "none",
-            margin: "auto",
-            marginRight: "30px",
-            width:"800",
-            height:"408",
-            // borderStyle: "5px",
-            // borderColor: "black",
-            // borderWidth: "2px",
-            border: "2px solid red"
-          }
+        //   const divStyle = {
+        //     display: "flex", 
+        //     justifyContent: "space-around", 
+        //     listStyle: "none",
+        //     margin: "auto",
+        //     marginRight: "30px",
+        //     width:"800",
+        //     height:"408",
+        //     // borderStyle: "5px",
+        //     // borderColor: "black",
+        //     // borderWidth: "2px",
+        //     border: "2px solid red"
+        //   }
 
         return (
 
@@ -39,7 +40,7 @@ export default class Homepage extends Component {
                     <br></br>
                     <br></br>
 
-                    <h1 style={{ textAlign: 'center' }}>FBA Planning Shipment App</h1>
+                    <h1 style={{ textAlign: 'center', marginLeft: "20px" }}>FBA Planning Shipment App</h1>
                     <p style={{ textAlign: 'center' }}>Are you a seller tired of endlessly scrolling in excel to manage Amazon FBA Inventory?</p>
 
                     <Divider />
@@ -47,7 +48,7 @@ export default class Homepage extends Component {
                     {/* I spent hours trying to center this video on the page prior to recording my final video */}
                     {/* Its unfortunante, but I am not proud of this final project */}
 
-                    <div style={{divStyle}}>
+                    <div>
                         <HPVideo />
                     </div>
 

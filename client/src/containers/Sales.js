@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
-import SkuDetails from '../components/SkuDetails'
+import Sales from '../components/Sales'
+import { removeProduct } from '../redux/actions'
 
 const mapStateToProps = (state) => {
     return {
@@ -14,8 +15,9 @@ const mapStateToProps = (state) => {
 // add mapDispatchToProps function here
 const mapDispatchToProps = (dispatch) => {
     return {
-
+        // addSKU: (products) => dispatch(addSKU(products),
+        removeProduct: (index) => dispatch(removeProduct(index)),
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SkuDetails)
+export default connect(mapStateToProps, mapDispatchToProps)(Sales)

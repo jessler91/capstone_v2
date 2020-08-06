@@ -6,3 +6,16 @@
   display: flex;
   text-decoration: none;
 }
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.vid {
+  display: block;
+  margin: 0 auto;
+  margin-left: -85px;
+}

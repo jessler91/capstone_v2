@@ -16,8 +16,7 @@ class About extends Component {
                     <h1 style={{ textAlign: 'center' }}>{this.state.heading}</h1>
                         <p>Im Justin, thank you for checking out my planning software.</p>
                         <Divider />
-                        <p>My final project goal is to create a dashboard of Amazon FBA inventory items, I am hoping to use real data from a active selling account, but will use a demo account dataset if I am unable. For each submitted inventory item, the application will display the current inventory and the forecasted inventory projections for the future 90 days.</p>
-                        <p>Welcome to Justins Capstone Server V2  -  My final project goal is to create a dashboard of Amazon FBA inventory items, I am hoping to use real data from a active selling account, but will use a demo account dataset if I am unable. For each submitted inventory item, the application will display the current inventory and the forecasted inventory projections for the future 90 days.</p>
+                        <p>My final project goal is to create a dashboard of Amazon FBA inventory items. This application is not connected to the MWS API, but instead used manually entered data.  For each submitted inventory item, the application will display the current inventory and the forecasted inventory projections for the future 90 days.</p>
                 </Container>
             </div>
         )

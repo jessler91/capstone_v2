@@ -5,9 +5,11 @@ import About from './components/About'
 import Login from './containers/Login'
 import Logout from './containers/Logout'
 import Dashboard from './containers/Dashboard'
-import SKUDetails from './containers/SKUDetails'
-import Products from './containers/Products'
+import Inventory from './containers/Inventory'
+import Sales from './containers/Sales'
+// import Products from './containers/Products'
 import cookie from 'cookie'
+import SkuDetails from './containers/SkuDetails'
 
 // // Write checkAuth function here
 // // Check the cookies for a cookie called "loggedIn"
@@ -38,8 +40,10 @@ const Router = () => {
             <Route path="/login" component={Login} />
             <Route path="/logout" component={Logout} />
             <ProtectedRoute path="/dashboard" component={Dashboard} />
-            <ProtectedRoute path="/products" component={Products} />
-            <ProtectedRoute path="/sku-details" component={SKUDetails} />    
+            {/* <ProtectedRoute path="/products" component={Products} /> */}
+            <ProtectedRoute path="/sku-inventory" component={Inventory} />
+            <ProtectedRoute path="/sku-sales" component={Sales} />      
+            <ProtectedRoute path="/product-details" component={SkuDetails} />      
         </Switch>
     );
 };

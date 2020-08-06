@@ -22,7 +22,7 @@ const TopNavBar = () => {
                     <MenuIcon />
                 </IconButton>
                 <Typography variant="h6" style={{ flexGrow: "1" }}>
-                    Enviromedica FBA_PM
+                   Amazon FBA PlanningMaster
                 </Typography>
                 <ul style={ulStyle} className="nav-list">
                     <li className="nav-list-item">
@@ -37,9 +37,9 @@ const TopNavBar = () => {
                     <li className="nav-list-item">
                         <Link to="/dashboard">Dashboard</Link>
                     </li>
-                    <li className="nav-list-item">
+                    {/* <li className="nav-list-item">
                         <Link to="/products">Products</Link>
-                    </li>
+                    </li> */}
                 </ul>
             </Toolbar>
         </AppBar>
