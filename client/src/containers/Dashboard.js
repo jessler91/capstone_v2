@@ -5,7 +5,10 @@ import { removeProduct } from '../redux/actions'
 const mapStateToProps = (state) => {
     return {
         users: state.users,
-        products: state.products
+        products: state.products,
+        display: state.display,
+        inventory: state.inventory,
+        sales: state.sales,
     }
 }
 

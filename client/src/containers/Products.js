@@ -5,6 +5,7 @@ import { getProducts } from '../redux/actions'
 const mapStateToProps = (state) => {
     return {
         products: state.products,
+        inventory: state.inventory,
     }
 }
 
