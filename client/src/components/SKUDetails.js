@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
+import detailsimg from './details.png'
+import '../App.css'
 
-export class SkuDetails extends Component {
+class SkuDetails extends Component {
     render() {
         return (
             <div>
                 <h2>Additional SKU Details Page</h2>
+                <img className="detailsimg" src={detailsimg} alt="Logo" />
             </div>
         )
     }

@@ -7,6 +7,11 @@
   text-decoration: none;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .img {
   display: block;
   margin-left: auto;
@@ -14,8 +19,25 @@
   width: 50%;
 }
 
+.imgsmall {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.detailsimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 .vid {
   display: block;
   margin: 0 auto;
   margin-left: -85px;
+}
+.MuiTableHead-root {
+  font-weight: bold;
 }

@@ -868,8 +868,9 @@ export default {
 
     sales: [
       {
+        "sku": "AMF-8-FBA",
         "child_asin": "B00BBD508C",
-        "title": "Ancient Minerals Magnesium Bath Flakes of Pure Genuine Zechstein Chloride - Resealable Magnesium Supplement Bag That Will Outperform Leading Epsom Salts (8 lb)",
+        "long_name": "Ancient Minerals Magnesium Bath Flakes of Pure Genuine Zechstein Chloride - Resealable Magnesium Supplement Bag That Will Outperform Leading Epsom Salts (8 lb)",
         "pretty_name": "Ancient Minerals Magnesium Bath Flakes - 8.0lb",
         "Sessions": "5,213",
         "Session_Percentage": "13.34%",
@@ -886,8 +887,9 @@ export default {
         "Total_Order_Items_B2B": 55
       },
       {
+        "sku": "AMO-8-FBA",
         "child_asin": "B001AD0HL8",
-        "title": "Ancient Minerals Magnesium Oil Spray Bottle of Pure Genuine Zechstein Magnesium Chloride - Topical Magnesium Supplement for Skin Application and Dermal Absorption (8 Fl Oz)",
+        "long_name": "Ancient Minerals Magnesium Oil Spray Bottle of Pure Genuine Zechstein Magnesium Chloride - Topical Magnesium Supplement for Skin Application and Dermal Absorption (8 Fl Oz)",
         "pretty_name": "Ancient Minerals Magnesium Oil - 8 oz",
         "Sessions": "6,927",
         "Session_Percentage": "17.73%",
@@ -904,8 +906,9 @@ export default {
         "Total_Order_Items_B2B": 25
       },
       {
+        "sku": "AMF-1-FBA",
         "child_asin": "B005F1ATJQ",
-        "title": "Ancient Minerals Magnesium Bath Flakes of Pure Genuine Zechstein Chloride - Resealable Magnesium Supplement Bag That Will Outperform Leading Epsom Salts (26.4 Ounce)",
+        "long_name": "Ancient Minerals Magnesium Bath Flakes of Pure Genuine Zechstein Chloride - Resealable Magnesium Supplement Bag That Will Outperform Leading Epsom Salts (26.4 Ounce)",
         "pretty_name": "Ancient Minerals Magnesium Bath Flakes - 1.65lb",
         "Sessions": "3,300",
         "Session_Percentage": "8.45%",
@@ -922,8 +925,9 @@ export default {
         "Total_Order_Items_B2B": 22
       },
       {
+        "sku": "AML-5-FBA",
         "child_asin": "B06XXP8YRL",
-        "title": "Ancient Minerals Magnesium Lotion of Pure Genuine Zechstein Magnesium Chloride - Best used for Topical Skin Application on Sensitive Skin (5oz)",
+        "long_name": "Ancient Minerals Magnesium Lotion of Pure Genuine Zechstein Magnesium Chloride - Best used for Topical Skin Application on Sensitive Skin (5oz)",
         "pretty_name": "Ancient Minerals Magnesium Lotion - 5 oz.",
         "Sessions": "3,069",
         "Session_Percentage": "7.85%",
@@ -940,8 +944,9 @@ export default {
         "Total_Order_Items_B2B": 13
       },
       {
+        "sku": "AMFU-1-FBA",
         "child_asin": "B00JFUD1OS",
-        "title": "Ancient Minerals Magnesium Bath Flakes Ultra with OptiMSM - Resealable Magnesium Supplement Bag of Zechstein Chloride with Proven Better Absorption Than Epsom Bath Salt (1.65 lb)",
+        "long_name": "Ancient Minerals Magnesium Bath Flakes Ultra with OptiMSM - Resealable Magnesium Supplement Bag of Zechstein Chloride with Proven Better Absorption Than Epsom Bath Salt (1.65 lb)",
         "pretty_name": "Ancient Minerals Magnesium Bath Flakes ULTRA - 1.65lb",
         "Sessions": "1,893",
         "Session_Percentage": "4.85%",
@@ -958,8 +963,9 @@ export default {
         "Total_Order_Items_B2B": 11
       },
       {
+        "sku": "AMLU-5-FBA",
         "child_asin": "B06XXR6PRD",
-        "title": "Ancient Minerals Magnesium Lotion ULTRA with MSM - Pure Genuine Zechstein Magnesium Lotion Supplement with MSM for Topical Application (5oz)",
+        "long_name": "Ancient Minerals Magnesium Lotion ULTRA with MSM - Pure Genuine Zechstein Magnesium Lotion Supplement with MSM for Topical Application (5oz)",
         "pretty_name": "Ancient Minerals Magnesium Lotion ULTRA - 5oz",
         "Sessions": "2,285",
         "Session_Percentage": "5.85%",
@@ -976,8 +982,9 @@ export default {
         "Total_Order_Items_B2B": 10
       },
       {
+        "sku": "TF-60-FBA",
         "child_asin": "B07G7GK2N1",
-        "title": "Enviromedica Terraflora Daily Care SBO Probiotic + Prebiotic Supplement - a Soil Based Shelf Stable Bacillus Spore Form Synbiotic formulated to Assist with Complete Gut Health (60ct)",
+        "long_name": "Enviromedica Terraflora Daily Care SBO Probiotic + Prebiotic Supplement - a Soil Based Shelf Stable Bacillus Spore Form Synbiotic formulated to Assist with Complete Gut Health (60ct)",
         "pretty_name": "Enviromedica Terraflora Soil-Based Probiotic",
         "Sessions": "1,479",
         "Session_Percentage": "3.79%",
@@ -994,8 +1001,9 @@ export default {
         "Total_Order_Items_B2B": 10
       },
       {
+        "sku": "AMF-4-FBA",
         "child_asin": "B06XXPLT2T",
-        "title": "Ancient Minerals Magnesium Bath Flakes of Pure Genuine Zechstein Chloride - Resealable Magnesium Supplement Bag That Will Outperform Leading Epsom Salts (4.4 lb)",
+        "long_name": "Ancient Minerals Magnesium Bath Flakes of Pure Genuine Zechstein Chloride - Resealable Magnesium Supplement Bag That Will Outperform Leading Epsom Salts (4.4 lb)",
         "pretty_name": "Ancient Minerals Magnesium Bath Flakes - 4.4lb",
         "Sessions": "2,140",
         "Session_Percentage": "5.48%",
@@ -1012,8 +1020,9 @@ export default {
         "Total_Order_Items_B2B": 8
       },
       {
+        "sku": "AMOU-8-FBA",
         "child_asin": "B008JSJ9HU",
-        "title": "Ancient Minerals Magnesium Oil Spray Ultra with MSM - a Pure Zechstein Topical Magnesium Chloride Supplement with The Added Benefits of OptiMSM (8oz)",
+        "long_name": "Ancient Minerals Magnesium Oil Spray Ultra with MSM - a Pure Zechstein Topical Magnesium Chloride Supplement with The Added Benefits of OptiMSM (8oz)",
         "pretty_name": "Ancient Minerals Magnesium Oil ULTRA - 8oz",
         "Sessions": "1,303",
         "Session_Percentage": "3.33%",
@@ -1030,8 +1039,9 @@ export default {
         "Total_Order_Items_B2B": 7
       },
       {
+        "sku": "AMLG-2-FBA",
         "child_asin": "B00BN9PFUW",
-        "title": "Ancient Minerals Goodnight Magnesium Lotion with Melatonin and OptiMSM - Night Cream of Topical Nighttime Moisturizing Lotion formulated for Bedtime Absorption (2.5oz)",
+        "long_name": "Ancient Minerals Goodnight Magnesium Lotion with Melatonin and OptiMSM - Night Cream of Topical Nighttime Moisturizing Lotion formulated for Bedtime Absorption (2.5oz)",
         "pretty_name": "Ancient Minerals Magnesium Lotion Goodnight - 2.5oz",
         "Sessions": "775",
         "Session_Percentage": "1.98%",
@@ -1048,8 +1058,9 @@ export default {
         "Total_Order_Items_B2B": 7
       },
       {
+        "sku": "AMO-4-FBA",
         "child_asin": "B06XXN4T98",
-        "title": "Ancient Minerals Magnesium Oil Spray Bottle of Pure Genuine Zechstein Magnesium Chloride - Topical Magnesium Supplement for Skin Application and Dermal Absorption (4oz)",
+        "long_name": "Ancient Minerals Magnesium Oil Spray Bottle of Pure Genuine Zechstein Magnesium Chloride - Topical Magnesium Supplement for Skin Application and Dermal Absorption (4oz)",
         "pretty_name": "Ancient Minerals Magnesium Oil - 4 oz",
         "Sessions": "1,798",
         "Session_Percentage": "4.60%",
@@ -1066,8 +1077,9 @@ export default {
         "Total_Order_Items_B2B": 6
       },
       {
+        "sku": "MCB-4-FBA",
         "child_asin": "B00X7RCW4A",
-        "title": "Enviromedica Magnetic Clay Natural Detox Bath Cleanse - Ancient Sodium and Calcium Bentonite Clay Powder with Himalayan Pink Salt for Detoxification of Harmful Toxins and Environmental Allergens",
+        "long_name": "Enviromedica Magnetic Clay Natural Detox Bath Cleanse - Ancient Sodium and Calcium Bentonite Clay Powder with Himalayan Pink Salt for Detoxification of Harmful Toxins and Environmental Allergens",
         "pretty_name": "Enviromedica Magnetic Clay Natural (4.62lb Jar)",
         "Sessions": "1,655",
         "Session_Percentage": "4.24%",
@@ -1084,8 +1096,9 @@ export default {
         "Total_Order_Items_B2B": 5
       },
       {
+        "sku": "AMGU-8-FBA",
         "child_asin": "B00JIN7DVY",
-        "title": "Ancient Minerals Magnesium Gel Ultra with OptiMSM and Aloe Vera - Topical Magnesium Gel Formula with MSM Best Used for Dermal Skin Absorption and Massage Therapy (8oz)",
+        "long_name": "Ancient Minerals Magnesium Gel Ultra with OptiMSM and Aloe Vera - Topical Magnesium Gel Formula with MSM Best Used for Dermal Skin Absorption and Massage Therapy (8oz)",
         "pretty_name": "Ancient Minerals Magnesium Gel Ultra- 8oz",
         "Sessions": "570",
         "Session_Percentage": "1.46%",
@@ -1102,8 +1115,9 @@ export default {
         "Total_Order_Items_B2B": 3
       },
       {
+        "sku": "CAR-120-FBA",
         "child_asin": "B07H7VM5Q8",
-        "title": "Enviromedica Tracheal Cartilage Collagen Supplement Capsules of Undenatured Type II Bovine Collagen Protein sourced from Grass Fed New Zealand Beef (120ct)",
+        "long_name": "Enviromedica Tracheal Cartilage Collagen Supplement Capsules of Undenatured Type II Bovine Collagen Protein sourced from Grass Fed New Zealand Beef (120ct)",
         "pretty_name": "Enviromedica Tracheal Cartilage Collagen (120ct)",
         "Sessions": "865",
         "Session_Percentage": "2.21%",
@@ -1120,8 +1134,9 @@ export default {
         "Total_Order_Items_B2B": 2
       },
       {
+        "sku": "TFDI-60-FBA",
         "child_asin": "B082MT873N",
-        "title": "Enviromedica Terraflora Deep Immune SBO Probiotic + Prebiotic Supplement - a Soil Based Shelf Stable Bacillus Spore Form Synbiotic with LC-Plasma - a Powerful Immune Booster (60ct)",
+        "long_name": "Enviromedica Terraflora Deep Immune SBO Probiotic + Prebiotic Supplement - a Soil Based Shelf Stable Bacillus Spore Form Synbiotic with LC-Plasma - a Powerful Immune Booster (60ct)",
         "pretty_name": "Enviromedica Terraflora Deep Immune Synbiotic",
         "Sessions": "665",
         "Session_Percentage": "1.70%",
@@ -1138,8 +1153,9 @@ export default {
         "Total_Order_Items_B2B": 2
       },
       {
+        "sku": "TFAC-60-FBA",
         "child_asin": "B082MTLLRH",
-        "title": "Enviromedica Terraflora Advanced Care SBO Probiotic + Prebiotic Supplement - a Soil Based Shelf Stable Bacillus Spore Synbiotic with Patented PreforPro Phage Complex (60ct)",
+        "long_name": "Enviromedica Terraflora Advanced Care SBO Probiotic + Prebiotic Supplement - a Soil Based Shelf Stable Bacillus Spore Synbiotic with Patented PreforPro Phage Complex (60ct)",
         "pretty_name": "Enviromedica Terraflora Advanced Care Daily Probiotic",
         "Sessions": "325",
         "Session_Percentage": "0.83%",
@@ -1156,8 +1172,9 @@ export default {
         "Total_Order_Items_B2B": 2
       },
       {
+        "sku": "AMOU-4-FBA",
         "child_asin": "B06XXPSJGT",
-        "title": "Ancient Minerals Magnesium Oil Spray Ultra with MSM - a Pure Zechstein Topical Magnesium Chloride Supplement with The Added Benefits of OptiMSM (4oz)",
+        "long_name": "Ancient Minerals Magnesium Oil Spray Ultra with MSM - a Pure Zechstein Topical Magnesium Chloride Supplement with The Added Benefits of OptiMSM (4oz)",
         "pretty_name": "Ancient Minerals Magnesium Oil ULTRA - 4oz",
         "Sessions": "788",
         "Session_Percentage": "2.02%",
@@ -1174,8 +1191,9 @@ export default {
         "Total_Order_Items_B2B": 1
       },
       {
+        "sku": "BLV-180-FBA",
         "child_asin": "B07H7VBFF1",
-        "title": "Enviromedica Freeze Dried Beef Liver Natural Energy Supplement Capsules of Pure Grass-Fed, Pastured, New Zealand Bovine with Preformed Vitamin A (180ct)",
+        "long_name": "Enviromedica Freeze Dried Beef Liver Natural Energy Supplement Capsules of Pure Grass-Fed, Pastured, New Zealand Bovine with Preformed Vitamin A (180ct)",
         "pretty_name": "Enviromedica Beef Liver with Preformed Vitamin A (180ct)",
         "Sessions": "712",
         "Session_Percentage": "1.82%",
@@ -1192,8 +1210,9 @@ export default {
         "Total_Order_Items_B2B": 1
       },
       {
+        "sku": "AMOS-4-FBA",
         "child_asin": "B07HZPZKNC",
-        "title": "Ancient Minerals Magnesium Oil Spray Sensitive - All-New Sensitive Formula with Allantoin, Organic Chamomile, and Organic Aloe Vera (4oz)",
+        "long_name": "Ancient Minerals Magnesium Oil Spray Sensitive - All-New Sensitive Formula with Allantoin, Organic Chamomile, and Organic Aloe Vera (4oz)",
         "pretty_name": "Ancient Minerals Oil Sensitive - 4oz",
         "Sessions": "454",
         "Session_Percentage": "1.16%",
@@ -1210,8 +1229,9 @@ export default {
         "Total_Order_Items_B2B": 1
       },
       {
+        "sku": "MAR-120-FBA",
         "child_asin": "B082XHGHM3",
-        "title": "Enviromedica Freeze-Dried Bone Marrow Complex with Cartilage and MCHA Whole Bone from Grass-Fed Pastured New Zealand Bovine (120ct)",
+        "long_name": "Enviromedica Freeze-Dried Bone Marrow Complex with Cartilage and MCHA Whole Bone from Grass-Fed Pastured New Zealand Bovine (120ct)",
         "pretty_name": "Enviromedica Bone Marrow (120ct)",
         "Sessions": "450",
         "Session_Percentage": "1.15%",
@@ -1228,8 +1248,9 @@ export default {
         "Total_Order_Items_B2B": 1
       },
       {
+        "sku": "TMT-68-FBA",
         "child_asin": "1450283543",
-        "title": "Transdermal Magnesium Therapy: A New Modality for the Maintenance of Health",
+        "long_name": "Transdermal Magnesium Therapy: A New Modality for the Maintenance of Health",
         "pretty_name": "Ancient Minerals Transdermal Magnesium Book",
         "Sessions": "250",
         "Session_Percentage": "0.64%",
@@ -1246,8 +1267,9 @@ export default {
         "Total_Order_Items_B2B": 0
       },
       {
+        "sku": "AMO-33-FBA",
         "child_asin": "B06XXN4TNR",
-        "title": "Ancient Minerals Magnesium Oil Refill Bottle of Pure Genuine Zechstein Magnesium Chloride - Topical Magnesium Supplement for Skin Application and Dermal Absorption (33.8oz)",
+        "long_name": "Ancient Minerals Magnesium Oil Refill Bottle of Pure Genuine Zechstein Magnesium Chloride - Topical Magnesium Supplement for Skin Application and Dermal Absorption (33.8oz)",
         "pretty_name": "Ancient Minerals Magnesium Oil - 33.8 oz",
         "Sessions": "832",
         "Session_Percentage": "2.13%",
@@ -1264,8 +1286,9 @@ export default {
         "Total_Order_Items_B2B": 0
       },
       {
+        "sku": "AMOU-33-FBA",
         "child_asin": "B06XXSYX2W",
-        "title": "Ancient Minerals Magnesium Oil Ultra with OptiMSM, Refill 33.8 oz. - Pure Genuine Zechstein Magnesium Chloride Supplement with MSM - Best Topical Skin Application for Dermal Absorption",
+        "long_name": "Ancient Minerals Magnesium Oil Ultra with OptiMSM, Refill 33.8 oz. - Pure Genuine Zechstein Magnesium Chloride Supplement with MSM - Best Topical Skin Application for Dermal Absorption",
         "pretty_name": "Ancient Minerals Magnesium Oil ULTRA - 33.8oz",
         "Sessions": "336",
         "Session_Percentage": "0.86%",
@@ -1282,8 +1305,9 @@ export default {
         "Total_Order_Items_B2B": 0
       },
       {
+        "sku": "AMOSP-4-FBA",
         "child_asin": "B07JH84532",
-        "title": "Ancient Minerals Magnesium Oil Spray Sensitive Plus - All-New Sensitive+ Formula Oil with Avena Sativa (Oat Aventhramides), Nopal Cactus, Organic Chamomile, and Allantoin (4oz)",
+        "long_name": "Ancient Minerals Magnesium Oil Spray Sensitive Plus - All-New Sensitive+ Formula Oil with Avena Sativa (Oat Aventhramides), Nopal Cactus, Organic Chamomile, and Allantoin (4oz)",
         "pretty_name": "Ancient Minerals Oil Sensitive Plus - 4oz",
         "Sessions": "182",
         "Session_Percentage": "0.47%",
@@ -1300,8 +1324,9 @@ export default {
         "Total_Order_Items_B2B": 0
       },
       {
+        "sku": "CAR-120-FBA",
         "child_asin": "B07KBDYKRK",
-        "title": "Enviromedica Cartilage Collagen Supplement Capsules",
+        "long_name": "Enviromedica Cartilage Collagen Supplement Capsules",
         "pretty_name": "Enviromedica Cartilage Collagen Supplement Capsules",
         "Sessions": "1",
         "Session_Percentage": "0.00%",
@@ -1318,8 +1343,9 @@ export default {
         "Total_Order_Items_B2B": 0
       },
       {
+        "sku": "AMFB-150-FBA",
         "child_asin": "B07KY3N9SF",
-        "title": "Ancient Minerals Inflatable Foot Bath Kit with Single-Use Magnesium Chloride Flakes Pouch - Great for Travel or at-Home Spa",
+        "long_name": "Ancient Minerals Inflatable Foot Bath Kit with Single-Use Magnesium Chloride Flakes Pouch - Great for Travel or at-Home Spa",
         "pretty_name": "Ancient Minerals Inflatable Foot Bath Kit",
         "Sessions": "132",
         "Session_Percentage": "0.34%",
@@ -1336,8 +1362,9 @@ export default {
         "Total_Order_Items_B2B": 0
       },
       {
+        "sku": "AMF-150-6-FBA",
         "child_asin": "B07MR2MDW8",
-        "title": "Ancient Minerals Magnesium Bath Flakes Single-Use Magnesium Chloride Pouches (0.33lb Bag, Pack of 6)",
+        "long_name": "Ancient Minerals Magnesium Bath Flakes Single-Use Magnesium Chloride Pouches (0.33lb Bag, Pack of 6)",
         "pretty_name": "Ancient Minerals Single Use Pouch, Pack of 6",
         "Sessions": "63",
         "Session_Percentage": "0.16%",
@@ -1354,8 +1381,9 @@ export default {
         "Total_Order_Items_B2B": 0
       },
       {
+        "sku": "TFWD-60-FBA",
         "child_asin": "B082MSTTPX",
-        "title": "Enviromedica Terraflora Women's Daily SBO Probiotic + Prebiotic Supplement - a Soil Based Bacillus Spore Form Synbiotic with Organic Cranberry to Support and a Healthy Urinary Tract (60ct)",
+        "long_name": "Enviromedica Terraflora Women's Daily SBO Probiotic + Prebiotic Supplement - a Soil Based Bacillus Spore Form Synbiotic with Organic Cranberry to Support and a Healthy Urinary Tract (60ct)",
         "pretty_name": "Enviromedica Terraflora Women's Daily Synbiotic",
         "Sessions": "206",
         "Session_Percentage": "0.53%",
@@ -1372,8 +1400,9 @@ export default {
         "Total_Order_Items_B2B": 0
       },
       {
+        "sku": "ORG-150-FBA",
         "child_asin": "B082XJVB9S",
-        "title": "Enviromedica Grass-Fed Organ Complex: Freeze-Dried Beef Liver, Kidney, Heart, and Pancreas (150ct)",
+        "long_name": "Enviromedica Grass-Fed Organ Complex: Freeze-Dried Beef Liver, Kidney, Heart, and Pancreas (150ct)",
         "pretty_name": "Enviromedica Organ Complex (150ct)",
         "Sessions": "403",
         "Session_Percentage": "1.03%",

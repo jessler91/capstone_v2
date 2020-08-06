@@ -28,7 +28,8 @@ const Inventory = (props) => {
     return (
 
         <div>
-            <p style={{ marginLeft: '20px' }} >Inventory Dashboard</p>
+            <br />
+            {/* <p style={{ marginLeft: '20px' }} >Inventory Dashboard</p> */}
             <img className="img" src={inv} alt="Logo" />
 
 
@@ -59,7 +60,9 @@ const Inventory = (props) => {
                         {props.inventory.map((inv, index) => {
                             return (
                                 <TableRow key={index}>
-                                    <TableCell align="left">{inv.sku}</TableCell>
+                                    <TableCell align="left">
+                                        <Link to={`/sku-details/${inv.sku}`}>{inv.sku}</Link>
+                                    </TableCell>
                                     <TableCell align="left">{inv.pretty_name}</TableCell>
                                     <TableCell align="left">{inv.afn_warehouse_quantity}</TableCell>
                                     <TableCell align="left">{inv.afn_fulfillable_quantity}</TableCell>

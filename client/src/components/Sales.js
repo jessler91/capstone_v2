@@ -10,6 +10,7 @@ import {
 } from '@material-ui/core'
 
 import { Link } from 'react-router-dom'
+import saleimg from './sales_image.png'
 // import Products from './Products'
 // import { addSKU } from '../redux/actions'
 
@@ -19,8 +20,10 @@ const Sales = (props) => {
     return (
 
         <div>
-            <p style={{ marginLeft: '20px' }} >Sales Dashboard</p>
-            
+            <br />
+            {/* <p style={{ marginLeft: '20px' }} >Sales Dashboard</p> */}
+            <img className="img" src={saleimg} alt="Logo" />
+            <br />
 
 
             <Container maxWidth="lg" className="sku-dashboard-container">
@@ -32,11 +35,13 @@ const Sales = (props) => {
 
                     <TableHead>
                         <TableRow>
-                            <TableCell>ASIN (Sales)</TableCell>
+                            <TableCell>Merchant SKU</TableCell>
                             <TableCell>Display Name</TableCell>
-                            <TableCell>Sessions</TableCell>
-                            <TableCell>PageViews</TableCell>
-                            <TableCell>Units Sold (30days)</TableCell>
+                            <TableCell>Sessions Traffic</TableCell>
+                            <TableCell>Page Views</TableCell>
+                            <TableCell>Conversion Rate</TableCell>
+                            <TableCell>Units Sold (last 30 days)</TableCell>
+                            <TableCell>Revenue (last 30 days)</TableCell>
                         </TableRow>
                     </TableHead>
 
@@ -46,11 +51,13 @@ const Sales = (props) => {
                         {props.sales.map((sale, index) => {
                             return (
                                 <TableRow key={index}>
-                                    <TableCell align="left">{sale.ASIN}</TableCell>
+                                    <TableCell align="left">{sale.sku}</TableCell>
                                     <TableCell align="left">{sale.pretty_name}</TableCell>
-                                    <TableCell align="left">{sale.sessions}</TableCell>
-                                    <TableCell align="left">{sale.pageviews}</TableCell>
-                                    <TableCell align="left">{sale.unitsSold}</TableCell>
+                                    <TableCell align="left">{sale.Sessions}</TableCell>
+                                    <TableCell align="left">{sale.Page_Views}</TableCell>
+                                    <TableCell align="left">{sale.Unit_Session_Percentage}</TableCell>                        
+                                    <TableCell align="left">{sale.Units_Ordered}</TableCell>
+                                    <TableCell align="left">{sale.Ordered_Product_Sales}</TableCell>
                                 </TableRow>
                             );
                         })}
