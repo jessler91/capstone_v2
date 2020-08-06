@@ -35,7 +35,8 @@ const Inventory = (props) => {
 
             <Container maxWidth="lg" className="sku-dashboard-container">
 
-                <h4>Welcome Dashboard User</h4>
+                {/* <h4>Welcome Dashboard User</h4> */}
+                <br />
                 <div className="flex-container"></div>
 
                 <Table>

@@ -51,7 +51,9 @@ const Sales = (props) => {
                         {props.sales.map((sale, index) => {
                             return (
                                 <TableRow key={index}>
-                                    <TableCell align="left">{sale.sku}</TableCell>
+                                    <TableCell align="left">
+                                        <Link to={`/sku-details/${sale.sku}`}>{sale.sku}</Link>
+                                    </TableCell>
                                     <TableCell align="left">{sale.pretty_name}</TableCell>
                                     <TableCell align="left">{sale.Sessions}</TableCell>
                                     <TableCell align="left">{sale.Page_Views}</TableCell>
